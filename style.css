@@ -1,0 +1,2298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Manrope', sans-serif;
+
+    background: #f8fafc;
+
+    color: #0f172a;
+
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+
+    box-shadow: 0 8px 35px rgba(15, 23, 42, 0.05);
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    text-decoration: none;
+    color: #0f172a;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+
+    transition: 0.3s;
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(-6deg) scale(1.05);
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+.logo-texto strong {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.logo-texto span {
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+
+/* BOTON CONTACTO */
+
+.btn-contacto {
+    text-decoration: none;
+
+    background: #0f172a;
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.btn-contacto:hover {
+    background: #2563eb;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    padding: 140px 7% 70px;
+
+    background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 35%),
+        radial-gradient(circle at bottom left, #bfdbfe 0%, transparent 35%),
+        #f8fafc;
+}
+
+
+/* TEXTO HERO */
+
+.hero-texto {
+    max-width: 680px;
+}
+
+.etiqueta {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.descripcion {
+    max-width: 560px;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* BOTONES HERO */
+
+.hero-botones {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-principal,
+.btn-secundario {
+
+    text-decoration: none;
+
+    padding: 16px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-principal {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-principal:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secundario {
+    border: 1px solid #cbd5e1;
+
+    color: #0f172a;
+
+    background: white;
+}
+
+.btn-secundario:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+
+/* TARJETA */
+
+.hero-card {
+
+    width: 380px;
+
+    background: #0f172a;
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    box-shadow: 0 30px 70px rgba(15, 23, 42, 0.20);
+
+    transform: rotate(2deg);
+
+    transition: transform .25s ease;
+}
+
+.hero-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+.hero-card p {
+
+    color: #60a5fa;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.hero-card h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 5px;
+}
+
+.hero-card span {
+
+    color: #94a3b8;
+}
+
+
+/* MOCKUP */
+
+.mockup {
+    margin-top: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.mockup-barra {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 15px;
+
+    background: #f1f5f9;
+}
+
+.mockup-barra span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #cbd5e1;
+}
+
+.mockup-contenido {
+    min-height: 215px;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(circle at top right, #bfdbfe 0%, transparent 35%),
+        linear-gradient(135deg, #ffffff, #eff6ff);
+}
+
+.mockup-logo {
+    color: #2563eb !important;
+
+    font-size: 13px !important;
+
+    font-weight: 800;
+
+    letter-spacing: 0 !important;
+
+    margin-bottom: 20px !important;
+}
+
+.mockup-contenido h3 {
+    color: #0f172a;
+
+    font-size: 27px;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+.mockup-boton {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicios {
+    padding: 110px 7%;
+    background: white;
+}
+
+.servicios-titulo {
+    max-width: 750px;
+    margin-bottom: 60px;
+}
+
+.servicios-titulo h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.servicios-titulo>p:last-child {
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* TARJETAS */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.servicio-card {
+    background: #f8fafc;
+
+    padding: 40px;
+
+    border-radius: 24px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.35s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicio-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: 0.35s;
+}
+
+.servicio-card:hover::before {
+    transform: scaleX(1);
+}
+
+.servicio-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 50px rgba(15, 23, 42, 0.10);
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.10);
+
+    border-color: #bfdbfe;
+}
+
+.numero {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border-radius: 12px;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    margin-bottom: 30px;
+
+    transition: 0.3s;
+}
+
+.servicio-card:hover .numero {
+    background: #2563eb;
+    color: white;
+
+    transform: rotate(-6deg);
+}
+
+.servicio-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.servicio-card p {
+    color: #64748b;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+/* =========================
+   POR QUÉ MR DIGITAL
+========================= */
+
+.porque {
+    padding: 110px 7%;
+    background: #0f172a;
+    color: white;
+}
+
+.porque-contenido {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.porque-texto {
+    max-width: 750px;
+    margin-bottom: 70px;
+}
+
+.porque-texto h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.porque-texto>p:last-child {
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.porque-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.porque-item {
+    padding: 35px;
+    border: 1px solid #334155;
+    border-radius: 22px;
+    transition: 0.35s;
+    position: relative;
+    overflow: hidden;
+}
+
+.porque-item::after {
+    content: "";
+
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    top: -60px;
+    right: -60px;
+
+    background: #2563eb;
+    border-radius: 50%;
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+}
+
+.porque-item:hover::after {
+    opacity: 0.12;
+    transform: scale(1.4);
+}
+
+.porque-item:hover {
+    background: #172033;
+    transform: translateY(-5px);
+    border-color: #2563eb;
+}
+
+.porque-item span {
+    display: block;
+    color: #60a5fa;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.porque-item h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.porque-item p {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* =========================
+   PORTAFOLIO
+========================= */
+
+.proyectos {
+    padding: 120px 7%;
+    background: #f8fafc;
+}
+
+.proyectos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    margin-bottom: 65px;
+}
+
+.proyectos-header>div {
+    max-width: 700px;
+}
+
+.proyectos-header h2 {
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+.proyectos-header h2 span {
+    color: #2563eb;
+}
+
+.proyectos-descripcion {
+    max-width: 430px;
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* GRID */
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.proyecto-card {
+    transition: 0.4s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* IMAGEN PROYECTO */
+
+.proyecto-imagen {
+    position: relative;
+    min-height: 470px;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+.dental {
+    background:
+        linear-gradient(135deg,
+            #dbeafe,
+            #93c5fd);
+}
+
+.oscuro {
+    background: #0f172a;
+    color: white;
+}
+
+
+/* ETIQUETA */
+
+.proyecto-tag {
+    position: absolute;
+
+    top: 30px;
+    left: 30px;
+
+    padding: 9px 15px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #0f172a;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* MINI NAVEGADOR */
+
+.browser {
+    width: 85%;
+
+    margin: 70px auto 0;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 70px rgba(15, 23, 42, 0.20);
+
+    transform: rotate(-3deg);
+
+    transition: 0.5s;
+}
+
+.proyecto-card:hover .browser {
+    transform: rotate(0deg) scale(1.04);
+
+    box-shadow:
+        0 35px 80px rgba(15, 23, 42, 0.28);
+}
+
+.browser-top {
+    height: 40px;
+
+    background: #f1f5f9;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding-left: 15px;
+}
+
+.browser-top span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #cbd5e1;
+}
+
+.browser-contenido {
+    min-height: 270px;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(135deg,
+            #ffffff,
+            #eff6ff);
+}
+
+.browser-contenido p {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.browser-contenido h3 {
+    color: #0f172a;
+
+    font-size: 36px;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+}
+
+.mini-boton {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+}
+
+
+/* PROXIMO PROYECTO */
+
+.proximo {
+    height: 100%;
+
+    min-height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.proximo span {
+    color: #60a5fa;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.proximo h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.proximo p {
+    color: #94a3b8;
+}
+
+
+/* INFO PROYECTO */
+
+.proyecto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 5px;
+}
+
+.proyecto-info span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+.proyecto-info h3 {
+    font-size: 23px;
+}
+
+.flecha {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 50%;
+
+    color: #0f172a;
+
+    text-decoration: none;
+
+    font-size: 23px;
+
+    transition: 0.3s;
+}
+
+.flecha:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+/* =========================
+   PROCESO
+========================= */
+
+.proceso {
+    padding: 120px 7%;
+    background: white;
+}
+
+.proceso-titulo {
+    max-width: 720px;
+    margin-bottom: 60px;
+}
+
+.proceso-titulo h2 {
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.proceso-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.paso {
+    padding: 30px 0;
+    border-top: 1px solid #cbd5e1;
+}
+
+.paso span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.paso h3 {
+    font-size: 22px;
+    margin: 25px 0 12px;
+}
+
+.paso p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    padding: 130px 7%;
+    background: #2563eb;
+    color: white;
+}
+
+.contacto-contenido {
+    max-width: 900px;
+}
+
+.contacto .etiqueta {
+    color: #bfdbfe;
+}
+
+.contacto h2 {
+    font-size: 58px;
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.contacto h2 span {
+    display: block;
+    color: #bfdbfe;
+}
+
+.contacto-contenido>p:not(.etiqueta) {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #dbeafe;
+    margin-bottom: 35px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+
+    padding: 17px 30px;
+
+    background: white;
+    color: #0f172a;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+
+
+/* BOTÓN FLOTANTE WHATSAPP */
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 18px;
+
+    background: #0f172a;
+    color: white;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.25);
+
+    z-index: 999;
+
+    transition: 0.3s;
+}
+
+.whatsapp-flotante:hover {
+    background: #2563eb;
+    transform: translateY(-4px);
+}
+
+.whatsapp-flotante strong {
+    font-size: 18px;
+}
+
+/* =========================
+   MENÚ MÓVIL
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+
+    background: white;
+    color: #0f172a;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.menu-toggle:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+
+
+/* MENÚ DESPLEGABLE EN CELULAR */
+
+
+
+/* =========================
+   CONFIANZA
+========================= */
+
+.confianza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+
+    margin: 0 7% 120px;
+
+    background: #e2e8f0;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+.confianza-item {
+    background: white;
+
+    padding: 35px;
+
+    transition: 0.3s;
+}
+
+.confianza-item:hover {
+    background: #f8fafc;
+}
+
+.confianza-item span {
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.confianza-item h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.confianza-item p {
+    color: #64748b;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+/* RESPONSIVE CONFIANZA */
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 80px 7% 30px;
+
+    background: #0b1120;
+    color: white;
+}
+
+.footer-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+
+    padding-bottom: 60px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    margin-bottom: 25px;
+}
+
+.footer-logo .logo-texto span {
+    color: #94a3b8;
+}
+
+.footer-marca>p {
+    max-width: 420px;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-links,
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-links h3,
+.footer-contacto h3 {
+    margin-bottom: 8px;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.footer-links a,
+.footer-contacto a {
+    color: #94a3b8;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer-contacto p {
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover,
+.footer-contacto a:hover {
+    color: #60a5fa;
+
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding-top: 30px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+
+/* LINK PROYECTO NOVADENT */
+
+.proyecto-link {
+    color: inherit;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.proyecto-link:hover {
+    color: #2563eb;
+}
+
+/* ========================================
+   PÁGINA PROYECTO - NOVADENT
+======================================== */
+
+.pagina-proyecto {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background: #f5f8fc;
+    color: #0b1120;
+}
+
+/* HEADER */
+
+.proyecto-header {
+    height: 90px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.proyecto-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #0b1120;
+    text-decoration: none;
+}
+
+.proyecto-logo .logo-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 14px;
+    font-weight: 800;
+}
+
+.proyecto-logo .logo-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-logo .logo-texto strong {
+    font-size: 18px;
+}
+
+.proyecto-logo .logo-texto span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #64748b;
+}
+
+.volver-proyectos {
+    color: #0b1120;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* HERO NOVADENT */
+
+.novadent-hero {
+    min-height: calc(100vh - 90px);
+    padding: 80px 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.novadent-etiqueta {
+    margin-bottom: 25px;
+
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.novadent-info h1 {
+    margin: 0;
+
+    font-size: clamp(60px, 7vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+}
+
+.novadent-info h1 span {
+    display: block;
+    color: #2563eb;
+}
+
+.novadent-descripcion {
+    max-width: 650px;
+    margin-top: 35px;
+
+    color: #64748b;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* DATOS */
+
+.novadent-datos {
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #cbd5e1;
+    padding-top: 25px;
+}
+
+.novadent-datos div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.novadent-datos span {
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.novadent-datos strong {
+    font-size: 15px;
+}
+
+/* MOCKUP */
+
+.novadent-presentacion {
+    padding: 70px;
+
+    background: linear-gradient(135deg,
+            #bfdbfe,
+            #93c5fd);
+
+    border-radius: 40px;
+}
+
+.novadent-browser {
+    overflow: hidden;
+
+    background: white;
+    border-radius: 24px;
+
+    box-shadow: 0 35px 80px rgba(15, 23, 42, 0.18);
+
+    transform: rotate(-3deg);
+}
+
+.browser-bar {
+    height: 55px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #eef2f7;
+}
+
+.browser-bar span {
+    width: 10px;
+    height: 10px;
+
+    background: #cbd5e1;
+    border-radius: 50%;
+}
+
+.browser-contenido {
+    min-height: 420px;
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.browser-contenido p {
+    color: #2563eb;
+    font-weight: 800;
+}
+
+.browser-contenido h2 {
+    margin: 20px 0 35px;
+
+    font-size: clamp(38px, 4vw, 65px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.browser-contenido button {
+    width: fit-content;
+
+    padding: 15px 25px;
+
+    border: 0;
+    border-radius: 30px;
+
+    background: #2563eb;
+    color: white;
+
+    font-family: inherit;
+    font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+
+
+/* ========================================
+   NOVADENT - SECCIÓN EL PROYECTO
+======================================== */
+
+.novadent-proyecto-info {
+    padding: 120px 7%;
+
+    background: #0f172a;
+    color: white;
+}
+
+.novadent-proyecto-info-contenido {
+    max-width: 1000px;
+}
+
+.proyecto-etiqueta {
+    margin-bottom: 25px;
+
+    color: #60a5fa;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.novadent-proyecto-info h2 {
+    max-width: 900px;
+
+    margin-bottom: 30px;
+
+    font-size: clamp(42px, 5vw, 72px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.proyecto-descripcion {
+    max-width: 760px;
+
+    color: #94a3b8;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+
+/* RESPONSIVE */
+
+
+
+/* ========================================
+   NOVADENT - RETO Y SOLUCIÓN
+======================================== */
+
+.reto-solucion {
+    padding: 110px 7%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    background: #ffffff;
+}
+
+.reto-bloque {
+    padding: 45px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 28px;
+
+    background: #f8fafc;
+}
+
+.reto-bloque h3 {
+    margin-bottom: 20px;
+
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.reto-bloque>p:last-child {
+    color: #64748b;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+
+/* ========================================
+   NOVADENT - DISEÑO RESPONSIVE
+======================================== */
+
+.novadent-responsive {
+    padding: 120px 7%;
+    background: #f8fafc;
+}
+
+.responsive-encabezado {
+    max-width: 850px;
+    margin-bottom: 70px;
+}
+
+.responsive-encabezado h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.responsive-encabezado>p:last-child {
+    max-width: 700px;
+
+    color: #64748b;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* CONTENEDOR DE MOCKUPS */
+
+.responsive-demo {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    gap: 40px;
+
+    align-items: end;
+}
+
+
+/* DESKTOP */
+
+.responsive-desktop {
+    padding: 25px;
+
+    background: #dbeafe;
+
+    border-radius: 32px;
+}
+
+.responsive-desktop>span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #2563eb;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.desktop-pantalla {
+    min-height: 430px;
+
+    padding: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 30px 70px rgba(15, 23, 42, 0.14);
+}
+
+.desktop-pantalla p {
+    color: #2563eb;
+    font-weight: 800;
+}
+
+.desktop-pantalla h3 {
+    margin: 20px 0 30px;
+
+    font-size: 56px;
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.desktop-pantalla button {
+    width: fit-content;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #2563eb;
+    color: white;
+
+    font-family: inherit;
+    font-weight: 700;
+}
+
+
+/* MOBILE */
+
+.responsive-mobile {
+    padding: 25px;
+
+    background: #0f172a;
+
+    border-radius: 32px;
+}
+
+.responsive-mobile>span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #60a5fa;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.mobile-pantalla {
+    min-height: 500px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-pantalla p {
+    color: #2563eb;
+    font-weight: 800;
+}
+
+.mobile-pantalla h3 {
+    margin: 20px 0 30px;
+
+    font-size: 38px;
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+.mobile-pantalla button {
+    width: fit-content;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #2563eb;
+    color: white;
+
+    font-family: inherit;
+    font-weight: 700;
+}
+
+
+/* RESPONSIVE REAL */
+
+
+
+/* ========================================
+   NOVADENT - RESULTADO FINAL
+======================================== */
+
+.resultado-final {
+    padding: 130px 7%;
+
+    background: #2563eb;
+    color: white;
+}
+
+.resultado-contenido {
+    max-width: 1000px;
+}
+
+.resultado-final .proyecto-etiqueta {
+    color: #bfdbfe;
+}
+
+.resultado-final h2 {
+    max-width: 950px;
+
+    margin-bottom: 30px;
+
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.resultado-contenido>p:not(.proyecto-etiqueta) {
+    max-width: 750px;
+
+    color: #dbeafe;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+.resultado-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.resultado-btn-principal,
+.resultado-btn-secundario {
+    padding: 16px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.resultado-btn-principal {
+    background: white;
+    color: #0f172a;
+}
+
+.resultado-btn-secundario {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: white;
+}
+
+.resultado-btn-principal:hover,
+.resultado-btn-secundario:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ========================================
+   AJUSTES FINALES - WHATSAPP Y FOOTER
+======================================== */
+
+.footer-bottom {
+    padding-right: 180px;
+}
+
+.whatsapp-flotante {
+    right: 35px;
+    bottom: 35px;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET Y MÓVIL
+======================================== */
+
+@media (max-width: 900px) {
+
+/* HEADER */
+
+    .header {
+        padding: 0 5%;
+        height: 75px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .btn-contacto {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 120px 5% 80px;
+        gap: 60px;
+    }
+
+    .hero-texto {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .descripcion {
+        font-size: 17px;
+    }
+
+    .hero-botones {
+        flex-wrap: wrap;
+    }
+
+    .hero-card {
+        width: 100%;
+        transform: none;
+    }
+
+
+    /* SERVICIOS */
+
+    .servicios {
+        padding: 90px 5%;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 40px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* POR QUÉ */
+
+    .porque {
+        padding: 90px 5%;
+    }
+
+    .porque-texto h2 {
+        font-size: 40px;
+    }
+
+    .porque-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PROYECTOS */
+
+    .proyectos {
+        padding: 90px 5%;
+    }
+
+    .proyectos-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proyectos-header h2 {
+        font-size: 42px;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-imagen {
+        min-height: 400px;
+        padding: 25px;
+    }
+
+    .browser {
+        width: 95%;
+    }
+
+
+    /* PROCESO */
+
+    .proceso {
+        padding: 90px 5%;
+    }
+
+    .proceso-titulo h2 {
+        font-size: 40px;
+    }
+
+    .proceso-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto {
+        padding: 100px 5%;
+    }
+
+    .contacto h2 {
+        font-size: 46px;
+    }
+
+.menu {
+        display: none;
+    }
+
+    .btn-contacto {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        margin-left: auto;
+
+        background: #0f172a;
+        color: white;
+
+        border: none;
+        border-radius: 12px;
+
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+.menu.menu-activo {
+        display: flex;
+
+        position: absolute;
+        top: 75px;
+        left: 5%;
+        right: 5%;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+
+        padding: 15px;
+
+        background: rgba(255, 255, 255, 0.96);
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+    }
+
+    .menu.menu-activo a {
+        width: 100%;
+        padding: 14px 16px;
+
+        border-radius: 10px;
+
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .menu.menu-activo a:hover {
+        background: #eff6ff;
+        color: #2563eb;
+    }
+
+.confianza {
+        grid-template-columns: 1fr;
+        margin: 0 5% 90px;
+    }
+
+.footer {
+        padding: 60px 5% 25px;
+    }
+
+    .footer-principal {
+        grid-template-columns: 1fr;
+        gap: 45px;
+
+        padding-bottom: 45px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+.footer {
+        padding: 60px 5% 25px;
+    }
+
+    .footer-principal {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding-bottom: 45px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+.novadent-hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 60px 6%;
+    }
+
+    .novadent-info h1 {
+        font-size: 60px;
+        letter-spacing: -3px;
+    }
+
+    .novadent-presentacion {
+        padding: 35px;
+        border-radius: 25px;
+    }
+
+    .browser-contenido {
+        min-height: 300px;
+        padding: 35px;
+    }
+
+    .novadent-datos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .proyecto-header {
+        padding: 0 6%;
+    }
+
+.novadent-proyecto-info {
+        padding: 90px 6%;
+    }
+
+    .novadent-proyecto-info h2 {
+        font-size: 42px;
+    }
+
+    .proyecto-descripcion {
+        font-size: 17px;
+    }
+
+.reto-solucion {
+        grid-template-columns: 1fr;
+        padding: 80px 6%;
+    }
+
+    .reto-bloque {
+        padding: 30px;
+    }
+
+    .reto-bloque h3 {
+        font-size: 28px;
+    }
+
+.novadent-responsive {
+        padding: 90px 6%;
+    }
+
+    .responsive-demo {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-pantalla {
+        min-height: 320px;
+        padding: 35px;
+    }
+
+    .desktop-pantalla h3 {
+        font-size: 40px;
+    }
+
+    .mobile-pantalla {
+        min-height: 430px;
+    }
+
+.resultado-final {
+        padding: 90px 6%;
+    }
+
+    .resultado-botones {
+        flex-direction: column;
+    }
+
+    .resultado-btn-principal,
+    .resultado-btn-secundario {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* ========================================
+   RESPONSIVE - CELULARES PEQUEÑOS
+======================================== */
+
+@media (max-width: 600px) {
+
+.hero h1 {
+        font-size: 39px;
+        letter-spacing: -1px;
+    }
+
+    .etiqueta {
+        font-size: 11px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+    }
+
+    .btn-principal,
+    .btn-secundario {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .hero-card {
+        padding: 25px;
+    }
+
+    .hero-card h2 {
+        font-size: 34px;
+    }
+
+    .mockup {
+        height: 200px;
+    }
+
+
+    .servicios-titulo h2,
+    .porque-texto h2,
+    .proyectos-header h2,
+    .proceso-titulo h2 {
+        font-size: 34px;
+    }
+
+
+    .proceso-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .proyecto-imagen {
+        min-height: 330px;
+    }
+
+    .browser {
+        margin-top: 60px;
+    }
+
+    .browser-contenido {
+        min-height: 220px;
+        padding: 30px;
+    }
+
+    .browser-contenido h3 {
+        font-size: 28px;
+    }
+
+
+    .contacto h2 {
+        font-size: 38px;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        text-align: center;
+    }
+
+.whatsapp-flotante {
+    right: 18px;
+    bottom: 18px;
+}
+
+.footer-bottom {
+    padding-right: 0;
+    padding-bottom: 70px;
+}
+
+}
