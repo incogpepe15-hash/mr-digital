@@ -1865,7 +1865,7 @@ body {
 
 @media (max-width: 900px) {
 
-/* HEADER */
+    /* HEADER */
 
     .header {
         padding: 0 5%;
@@ -2006,7 +2006,7 @@ body {
         font-size: 46px;
     }
 
-.menu {
+    .menu {
         display: none;
     }
 
@@ -2034,7 +2034,7 @@ body {
         cursor: pointer;
     }
 
-.menu.menu-activo {
+    .menu.menu-activo {
         display: flex;
 
         position: absolute;
@@ -2074,12 +2074,12 @@ body {
         color: #2563eb;
     }
 
-.confianza {
+    .confianza {
         grid-template-columns: 1fr;
         margin: 0 5% 90px;
     }
 
-.footer {
+    .footer {
         padding: 60px 5% 25px;
     }
 
@@ -2095,7 +2095,7 @@ body {
         gap: 10px;
     }
 
-.footer {
+    .footer {
         padding: 60px 5% 25px;
     }
 
@@ -2110,7 +2110,7 @@ body {
         gap: 10px;
     }
 
-.novadent-hero {
+    .novadent-hero {
         grid-template-columns: 1fr;
         gap: 50px;
         padding: 60px 6%;
@@ -2140,7 +2140,7 @@ body {
         padding: 0 6%;
     }
 
-.novadent-proyecto-info {
+    .novadent-proyecto-info {
         padding: 90px 6%;
     }
 
@@ -2152,7 +2152,7 @@ body {
         font-size: 17px;
     }
 
-.reto-solucion {
+    .reto-solucion {
         grid-template-columns: 1fr;
         padding: 80px 6%;
     }
@@ -2165,7 +2165,7 @@ body {
         font-size: 28px;
     }
 
-.novadent-responsive {
+    .novadent-responsive {
         padding: 90px 6%;
     }
 
@@ -2186,7 +2186,7 @@ body {
         min-height: 430px;
     }
 
-.resultado-final {
+    .resultado-final {
         padding: 90px 6%;
     }
 
@@ -2208,7 +2208,7 @@ body {
 
 @media (max-width: 600px) {
 
-.hero h1 {
+    .hero h1 {
         font-size: 39px;
         letter-spacing: -1px;
     }
@@ -2285,14 +2285,1278 @@ body {
         text-align: center;
     }
 
-.whatsapp-flotante {
-    right: 18px;
-    bottom: 18px;
+    .whatsapp-flotante {
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .footer-bottom {
+        padding-right: 0;
+        padding-bottom: 70px;
+    }
+
 }
 
-.footer-bottom {
-    padding-right: 0;
-    padding-bottom: 70px;
+/* ========================================
+   CLÍNICA NOVADENT - HERO
+======================================== */
+
+.clinica-page {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
 }
 
+
+/* HEADER */
+
+.clinica-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+
+    z-index: 1000;
+}
+
+.clinica-logo {
+    color: #0f172a;
+
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.clinica-logo span {
+    color: #2563eb;
+}
+
+.clinica-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.clinica-menu a {
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.clinica-menu a:hover {
+    color: #2563eb;
+}
+
+.clinica-btn-header {
+    padding: 13px 23px;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.clinica-btn-header:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.20);
+}
+
+
+/* HERO */
+
+.clinica-hero {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 145px 7% 80px;
+
+    background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 35%),
+        radial-gradient(circle at bottom left, #e0f2fe 0%, transparent 35%),
+        #f8fafc;
+}
+
+.clinica-hero-texto {
+    max-width: 760px;
+}
+
+.clinica-etiqueta {
+    margin-bottom: 25px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.clinica-hero h1 {
+    margin: 0 0 30px;
+
+    font-size: clamp(56px, 6vw, 92px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+}
+
+.clinica-hero h1 span {
+    display: block;
+
+    color: #2563eb;
+}
+
+.clinica-descripcion {
+    max-width: 600px;
+
+    margin-bottom: 35px;
+
+    color: #64748b;
+
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* BOTONES */
+
+.clinica-botones {
+    display: flex;
+    gap: 15px;
+
+    margin-bottom: 55px;
+}
+
+.clinica-btn-principal,
+.clinica-btn-secundario {
+    padding: 16px 26px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.clinica-btn-principal {
+    background: #2563eb;
+    color: white;
+}
+
+.clinica-btn-secundario {
+    background: white;
+
+    color: #0f172a;
+
+    border: 1px solid #cbd5e1;
+}
+
+.clinica-btn-principal:hover,
+.clinica-btn-secundario:hover {
+    transform: translateY(-4px);
+}
+
+
+/* CONFIANZA */
+
+.clinica-confianza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    max-width: 650px;
+
+    padding-top: 28px;
+
+    border-top: 1px solid #dbe3ee;
+}
+
+.clinica-confianza div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.clinica-confianza strong {
+    font-size: 14px;
+}
+
+.clinica-confianza span {
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* VISUAL */
+
+.clinica-hero-visual {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clinica-foto-demo {
+    width: 100%;
+    min-height: 560px;
+
+    padding: 45px;
+
+    display: flex;
+    align-items: flex-end;
+
+    border-radius: 40px;
+
+    background-image:
+        linear-gradient(180deg,
+            rgba(15, 23, 42, 0.02),
+            rgba(15, 23, 42, 0.35)),
+        url("./novadent-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 35px 80px rgba(15, 23, 42, 0.16);
+}
+
+.clinica-foto-contenido {
+    color: white;
+}
+
+.clinica-foto-contenido span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.clinica-foto-contenido p {
+    margin: 0;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+/* MINI CARD */
+
+.clinica-mini-card {
+    position: absolute;
+
+    right: -25px;
+    bottom: 40px;
+
+    min-width: 230px;
+
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+}
+
+.clinica-mini-card span {
+    color: #2563eb;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.clinica-mini-card strong {
+    font-size: 15px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .clinica-header {
+        padding: 0 5%;
+    }
+
+    .clinica-menu {
+        display: none;
+    }
+
+    .clinica-btn-header {
+        font-size: 12px;
+        padding: 11px 18px;
+    }
+
+    .clinica-hero {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 130px 5% 70px;
+    }
+
+    .clinica-hero h1 {
+        font-size: 54px;
+
+        letter-spacing: -2px;
+    }
+
+    .clinica-botones {
+        flex-direction: column;
+    }
+
+    .clinica-btn-principal,
+    .clinica-btn-secundario {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .clinica-confianza {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .clinica-hero-visual {
+        min-height: auto;
+    }
+
+    .clinica-foto-demo {
+        min-height: 450px;
+
+        border-radius: 28px;
+    }
+
+    .clinica-mini-card {
+        right: 15px;
+        bottom: 20px;
+    }
+
+}
+
+/* ========================================
+   CLÍNICA NOVADENT - TRATAMIENTOS
+======================================== */
+
+.clinica-tratamientos {
+    padding: 120px 7%;
+    background: #ffffff;
+}
+
+.tratamientos-encabezado {
+    max-width: 850px;
+    margin-bottom: 65px;
+}
+
+.tratamientos-encabezado h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.tratamientos-encabezado>p:last-child {
+    max-width: 700px;
+
+    color: #64748b;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.tratamientos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tratamiento-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 260px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+
+    transition: 0.35s ease;
+}
+
+.tratamiento-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(90deg,
+            #2563eb,
+            #60a5fa);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: 0.35s ease;
+}
+
+.tratamiento-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 25px 55px rgba(15, 23, 42, 0.10);
+}
+
+.tratamiento-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tratamiento-card>span {
+    margin-bottom: 45px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.tratamiento-card h3 {
+    margin-bottom: 14px;
+
+    font-size: 24px;
+}
+
+.tratamiento-card p {
+    color: #64748b;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .clinica-tratamientos {
+        padding: 90px 5%;
+    }
+
+    .tratamientos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tratamiento-card {
+        min-height: auto;
+    }
+
+}
+
+/* ========================================
+   CLÍNICA NOVADENT - NOSOTROS
+======================================== */
+
+.clinica-nosotros {
+    padding: 120px 7%;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+
+    align-items: center;
+
+    background: #f8fafc;
+}
+
+
+/* VISUAL */
+
+.nosotros-visual {
+    min-height: 600px;
+}
+
+.nosotros-imagen-demo {
+    height: 100%;
+    min-height: 600px;
+
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border-radius: 36px;
+
+    background-image:
+        linear-gradient(180deg,
+            rgba(15, 23, 42, 0.03),
+            rgba(15, 23, 42, 0.38)),
+        url("./novadent-nosotros.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    box-shadow:
+        0 30px 70px rgba(15, 23, 42, 0.14);
+}
+
+.nosotros-imagen-demo span {
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.nosotros-imagen-demo h3 {
+    max-width: 460px;
+
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+}
+
+
+/* CONTENIDO */
+
+.nosotros-contenido h2 {
+    max-width: 750px;
+
+    margin-bottom: 28px;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.nosotros-contenido>p:not(.clinica-etiqueta) {
+    max-width: 720px;
+
+    margin-bottom: 20px;
+
+    color: #64748b;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* BENEFICIOS */
+
+.nosotros-beneficios {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros-beneficios>div {
+    padding: 22px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    border-top: 1px solid #dbe3ee;
+}
+
+.nosotros-beneficios strong {
+    font-size: 16px;
+}
+
+.nosotros-beneficios span {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .clinica-nosotros {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 90px 5%;
+    }
+
+    .nosotros-visual,
+    .nosotros-imagen-demo {
+        min-height: 450px;
+    }
+
+    .nosotros-imagen-demo {
+        border-radius: 28px;
+    }
+
+    .nosotros-imagen-demo h3 {
+        font-size: 34px;
+    }
+
+}
+
+/* ========================================
+   CLÍNICA NOVADENT - EQUIPO
+======================================== */
+
+.clinica-equipo {
+    padding: 120px 7%;
+
+    background: #ffffff;
+}
+
+.equipo-encabezado {
+    max-width: 850px;
+
+    margin-bottom: 65px;
+}
+
+.equipo-encabezado h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(42px, 5vw, 72px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.equipo-encabezado>p:last-child {
+    max-width: 680px;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.equipo-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+.doctor-card {
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    border: 1px solid #e2e8f0;
+
+    background: #f8fafc;
+
+    transition: 0.35s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(15, 23, 42, 0.10);
+}
+
+.doctor-foto {
+    min-height: 380px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(135deg,
+            #dbeafe,
+            #93c5fd);
+
+    color: white;
+
+    font-size: 46px;
+
+    font-weight: 800;
+}
+
+.doctor-info {
+    padding: 25px;
+}
+
+.doctor-info h3 {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+}
+
+.doctor-info span {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .clinica-equipo {
+        padding: 90px 5%;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-foto {
+        min-height: 320px;
+    }
+
+}
+
+/* ========================================
+   AVISO PROYECTO CONCEPTUAL
+======================================== */
+
+.aviso-conceptual {
+    position: relative;
+    z-index: 1100;
+
+    min-height: 44px;
+    padding: 9px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    background: #0f172a;
+    color: #cbd5e1;
+
+    font-size: 12px;
+}
+
+.aviso-conceptual span {
+    color: #60a5fa;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.aviso-conceptual p {
+    margin: 0;
+}
+
+.aviso-conceptual strong {
+    color: #ffffff;
+}
+
+.aviso-conceptual a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.aviso-conceptual a:hover {
+    color: #60a5fa;
+}
+
+
+/* Ajustamos el header porque ahora existe la barra superior */
+
+.clinica-header {
+    top: 44px;
+}
+
+
+/* Ajustamos el hero */
+
+.clinica-hero {
+    padding-top: 189px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+    .aviso-conceptual {
+        min-height: auto;
+        padding: 10px 5%;
+
+        flex-wrap: wrap;
+        gap: 5px 10px;
+
+        justify-content: flex-start;
+    }
+
+    .aviso-conceptual p {
+        width: 100%;
+    }
+
+    .clinica-header {
+        top: 75px;
+    }
+
+    .clinica-hero {
+        padding-top: 205px;
+    }
+}
+
+/* ========================================
+   CLÍNICA NOVADENT - FAQ
+======================================== */
+
+.clinica-faq {
+    padding: 120px 7%;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+
+    background: #f8fafc;
+}
+
+.faq-encabezado {
+    max-width: 600px;
+}
+
+.faq-encabezado h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(42px, 4.5vw, 68px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.faq-encabezado>p:last-child {
+    color: #64748b;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* PREGUNTAS */
+
+.faq-lista {
+    border-top: 1px solid #cbd5e1;
+}
+
+.faq-item {
+    padding: 0;
+
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.faq-item summary {
+    padding: 28px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: #0f172a;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary span {
+    color: #2563eb;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary span {
+    transform: rotate(45deg);
+}
+
+.faq-item>p {
+    max-width: 650px;
+
+    margin: -5px 0 28px;
+
+    color: #64748b;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+    .clinica-faq {
+        padding: 90px 5%;
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .faq-item summary {
+        font-size: 16px;
+    }
+
+}
+
+/* ========================================
+   CLÍNICA NOVADENT - CONTACTO
+======================================== */
+
+.clinica-contacto {
+    padding: 120px 7%;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+
+    align-items: center;
+
+    background: #0f172a;
+    color: white;
+}
+
+.contacto-clinica-contenido {
+    max-width: 800px;
+}
+
+.contacto-clinica-contenido h2 {
+    max-width: 750px;
+
+    margin-bottom: 25px;
+
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+.contacto-intro {
+    max-width: 650px;
+
+    color: #94a3b8;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* DATOS */
+
+.contacto-datos {
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #334155;
+}
+
+.contacto-datos div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.contacto-datos span {
+    color: #60a5fa;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.contacto-datos strong {
+    font-size: 15px;
+}
+
+.contacto-datos p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* CARD DE CONTACTO */
+
+.contacto-clinica-card {
+    padding: 50px;
+
+    background: #2563eb;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.22);
+}
+
+.contacto-card-etiqueta {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: #bfdbfe;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.contacto-clinica-card h3 {
+    margin-bottom: 22px;
+
+    font-size: 42px;
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+}
+
+.contacto-clinica-card p {
+    margin-bottom: 30px;
+
+    color: #dbeafe;
+
+    line-height: 1.7;
+}
+
+.contacto-demo-btn {
+    display: inline-block;
+
+    padding: 16px 25px;
+
+    background: white;
+    color: #0f172a;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.contacto-demo-btn:hover {
+    transform: translateY(-4px);
+}
+
+.contacto-clinica-card small {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #bfdbfe;
+}
+
+
+/* FOOTER */
+
+.clinica-footer {
+    padding: 35px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    background: #080d19;
+    color: #94a3b8;
+}
+
+.clinica-footer-logo {
+    color: white;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.clinica-footer-logo span {
+    color: #60a5fa;
+}
+
+.clinica-footer p {
+    margin: 0;
+
+    font-size: 12px;
+}
+
+.clinica-footer strong {
+    color: white;
+}
+
+.clinica-footer a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+    .clinica-contacto {
+        padding: 90px 5%;
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contacto-datos {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .contacto-clinica-card {
+        padding: 35px;
+
+        border-radius: 25px;
+    }
+
+    .contacto-clinica-card h3 {
+        font-size: 34px;
+    }
+
+    .clinica-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+.doctor-andres {
+    background-image: url("./doctor-andres.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.doctor-valeria {
+    background-image: url("./doctor-valeria.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.doctor-mateo {
+    background-image: url("./doctor-mateo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
