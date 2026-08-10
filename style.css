@@ -3560,3 +3560,1468 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* ========================================
+   LÚMERA - BASE
+======================================== */
+
+.lumera-page {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background: #151210;
+    color: #f7f1e8;
+}
+
+
+/* AVISO PORTAFOLIO */
+
+.lumera-aviso {
+    min-height: 44px;
+    padding: 10px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    background: #0c0a09;
+    color: #c8bfb5;
+
+    font-size: 12px;
+}
+
+.lumera-aviso span {
+    color: #d97745;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+.lumera-aviso p {
+    margin: 0;
+}
+
+.lumera-aviso strong {
+    color: white;
+}
+
+.lumera-aviso a {
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* HEADER */
+
+.lumera-header {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    height: 90px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(21, 18, 16, 0.88);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lumera-logo {
+    display: flex;
+    flex-direction: column;
+
+    color: #f7f1e8;
+
+    text-decoration: none;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.lumera-logo span {
+    margin-top: 3px;
+
+    color: #b8aa9d;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+.lumera-menu {
+    display: flex;
+    gap: 34px;
+}
+
+.lumera-menu a {
+    color: #cfc5bb;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.lumera-menu a:hover {
+    color: #d97745;
+}
+
+.lumera-reserva {
+    padding: 13px 22px;
+
+    border: 1px solid #d97745;
+    border-radius: 30px;
+
+    color: #f7f1e8;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.lumera-reserva:hover {
+    background: #d97745;
+}
+
+
+/* HERO */
+
+.lumera-hero {
+    min-height: calc(100vh - 134px);
+
+    padding: 80px 7%;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(217, 119, 69, 0.13),
+            transparent 32%),
+        #151210;
+}
+
+.lumera-hero-contenido {
+    max-width: 720px;
+}
+
+.lumera-etiqueta {
+    margin-bottom: 25px;
+
+    color: #d97745;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.lumera-hero h1 {
+    margin: 0 0 30px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(72px, 8vw, 125px);
+
+    line-height: 0.88;
+
+    letter-spacing: -4px;
+
+    font-weight: 600;
+}
+
+.lumera-hero h1 span {
+    display: block;
+
+    color: #d97745;
+}
+
+.lumera-descripcion {
+    max-width: 600px;
+
+    margin-bottom: 35px;
+
+    color: #b8aa9d;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* BOTONES */
+
+.lumera-botones {
+    display: flex;
+    gap: 14px;
+}
+
+.lumera-btn-principal,
+.lumera-btn-secundario {
+    padding: 16px 27px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.lumera-btn-principal {
+    background: #d97745;
+    color: white;
+}
+
+.lumera-btn-secundario {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    color: #f7f1e8;
+}
+
+.lumera-btn-principal:hover,
+.lumera-btn-secundario:hover {
+    transform: translateY(-4px);
+}
+
+
+/* HERO VISUAL */
+
+.lumera-hero-visual {
+    min-height: 620px;
+}
+
+.lumera-imagen-demo {
+    height: 100%;
+    min-height: 620px;
+
+    padding: 45px;
+
+    display: flex;
+    align-items: flex-end;
+
+    border-radius: 36px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(21, 18, 16, 0.05),
+            rgba(21, 18, 16, 0.70)),
+        url("./lumera-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow:
+        0 35px 80px rgba(0, 0, 0, 0.35);
+}
+
+.lumera-imagen-texto span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #f1b48e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.lumera-imagen-texto p {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 44px;
+
+    line-height: 1;
+
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .lumera-aviso {
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+
+        padding: 10px 5%;
+    }
+
+    .lumera-aviso p {
+        width: 100%;
+    }
+
+    .lumera-header {
+        padding: 0 5%;
+    }
+
+    .lumera-menu {
+        display: none;
+    }
+
+    .lumera-reserva {
+        padding: 11px 17px;
+
+        font-size: 12px;
+    }
+
+    .lumera-hero {
+        grid-template-columns: 1fr;
+
+        padding: 70px 5%;
+
+        gap: 50px;
+    }
+
+    .lumera-hero h1 {
+        font-size: 68px;
+
+        letter-spacing: -2px;
+    }
+
+    .lumera-botones {
+        flex-direction: column;
+    }
+
+    .lumera-btn-principal,
+    .lumera-btn-secundario {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .lumera-hero-visual,
+    .lumera-imagen-demo {
+        min-height: 480px;
+    }
+
+}
+
+/* ========================================
+   LÚMERA - PLATOS DESTACADOS
+======================================== */
+
+.lumera-menu-section {
+    padding: 120px 7%;
+    background: #f3eee7;
+    color: #1c1815;
+}
+
+.lumera-menu-encabezado {
+    max-width: 850px;
+    margin-bottom: 70px;
+}
+
+.lumera-menu-encabezado h2 {
+    margin-bottom: 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 5vw, 78px);
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.lumera-menu-encabezado>p:last-child {
+    max-width: 700px;
+
+    color: #766b63;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* GRID */
+
+.lumera-platos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* TARJETAS */
+
+.lumera-plato-card {
+    overflow: hidden;
+
+    background: #fffaf4;
+
+    border: 1px solid #ded5cc;
+    border-radius: 28px;
+
+    transition: 0.35s;
+}
+
+.lumera-plato-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(60, 40, 30, 0.12);
+}
+
+.lumera-plato-imagen {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.05),
+            rgba(20, 15, 12, 0.50)),
+        linear-gradient(135deg,
+            #b86f48,
+            #4b2e22);
+}
+
+.lumera-plato-imagen span {
+    color: white;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* INFORMACIÓN */
+
+.lumera-plato-info {
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.lumera-plato-info h3 {
+    margin-bottom: 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+}
+
+.lumera-plato-info p {
+    color: #766b63;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.lumera-plato-info strong {
+    color: #b85c38;
+
+    font-size: 18px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .lumera-menu-section {
+        padding: 90px 5%;
+    }
+
+    .lumera-platos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lumera-plato-imagen {
+        min-height: 300px;
+    }
+
+}
+
+/* ========================================
+   LÚMERA - NUESTRA HISTORIA
+======================================== */
+
+.lumera-historia {
+    padding: 120px 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+
+    background: #171310;
+    color: #f7f1e8;
+}
+
+
+/* VISUAL */
+
+.lumera-historia-visual {
+    min-height: 600px;
+}
+
+.lumera-historia-imagen {
+    min-height: 600px;
+
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border-radius: 36px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.05),
+            rgba(20, 15, 12, 0.72)),
+        linear-gradient(135deg,
+            #8a4f32,
+            #2d211b);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.28);
+}
+
+.lumera-historia-imagen span {
+    margin-bottom: 18px;
+
+    color: #f1b48e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.lumera-historia-imagen h3 {
+    max-width: 480px;
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+    line-height: 1;
+
+    color: white;
+}
+
+
+/* CONTENIDO */
+
+.lumera-historia-contenido h2 {
+    max-width: 760px;
+
+    margin-bottom: 30px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.lumera-historia-contenido>p:not(.lumera-etiqueta) {
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    color: #b8aa9d;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* DATOS */
+
+.lumera-historia-datos {
+    margin-top: 45px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lumera-historia-datos>div {
+    padding: 22px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.lumera-historia-datos strong {
+    color: #f7f1e8;
+
+    font-size: 15px;
+}
+
+.lumera-historia-datos span {
+    color: #8f8177;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .lumera-historia {
+        grid-template-columns: 1fr;
+
+        padding: 90px 5%;
+
+        gap: 50px;
+    }
+
+    .lumera-historia-visual,
+    .lumera-historia-imagen {
+        min-height: 450px;
+    }
+
+    .lumera-historia-imagen h3 {
+        font-size: 40px;
+    }
+
+}
+
+/* ========================================
+   LÚMERA - AMBIENTE
+======================================== */
+
+.lumera-ambiente {
+    padding: 120px 7%;
+    background: #f3eee7;
+    color: #1c1815;
+}
+
+.lumera-ambiente-encabezado {
+    max-width: 850px;
+    margin-bottom: 65px;
+}
+
+.lumera-ambiente-encabezado h2 {
+    margin-bottom: 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 5vw, 78px);
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.lumera-ambiente-encabezado>p:last-child {
+    max-width: 700px;
+
+    color: #766b63;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* GALERÍA */
+
+.lumera-galeria {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    grid-template-rows: repeat(2, 260px);
+
+    gap: 22px;
+}
+
+.lumera-galeria-item {
+    position: relative;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.04),
+            rgba(20, 15, 12, 0.55)),
+        linear-gradient(135deg,
+            #7a4631,
+            #2f211b);
+
+    transition: 0.35s ease;
+}
+
+.lumera-galeria-item:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 25px 55px rgba(60, 40, 30, 0.16);
+}
+
+.lumera-galeria-item span {
+    color: white;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.galeria-grande {
+    grid-row: 1 / 3;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+    .lumera-ambiente {
+        padding: 90px 5%;
+    }
+
+    .lumera-galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        gap: 20px;
+    }
+
+    .lumera-galeria-item,
+    .galeria-grande {
+        grid-row: auto;
+
+        min-height: 320px;
+    }
+
+}
+
+/* ========================================
+   LÚMERA - CONTACTO Y RESERVAS
+======================================== */
+
+.lumera-contacto {
+    padding: 120px 7%;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+
+    align-items: center;
+
+    background: #151210;
+    color: #f7f1e8;
+}
+
+.lumera-contacto-contenido h2 {
+    margin-bottom: 28px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(52px, 5vw, 82px);
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+}
+
+.lumera-contacto-contenido>p:not(.lumera-etiqueta) {
+    max-width: 700px;
+
+    color: #b8aa9d;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* DATOS */
+
+.lumera-contacto-datos {
+    margin-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.lumera-contacto-datos div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.lumera-contacto-datos span {
+    color: #d97745;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.lumera-contacto-datos strong {
+    font-size: 15px;
+}
+
+.lumera-contacto-datos p {
+    margin: 0;
+
+    color: #8f8177;
+
+    font-size: 13px;
+}
+
+
+/* CARD RESERVA */
+
+.lumera-reserva-card {
+    padding: 50px;
+
+    background: #d97745;
+
+    border-radius: 32px;
+
+    color: white;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.30);
+}
+
+.lumera-reserva-card>span {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: #ffe0cf;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.lumera-reserva-card h3 {
+    margin-bottom: 22px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 48px;
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+.lumera-reserva-card p {
+    margin-bottom: 30px;
+
+    color: #fff1e8;
+
+    line-height: 1.7;
+}
+
+.lumera-reserva-btn {
+    display: inline-block;
+
+    padding: 16px 25px;
+
+    background: #151210;
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.lumera-reserva-btn:hover {
+    transform: translateY(-4px);
+}
+
+.lumera-reserva-card small {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #ffe0cf;
+}
+
+
+/* FOOTER */
+
+.lumera-footer {
+    padding: 35px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    background: #0c0a09;
+    color: #8f8177;
+}
+
+.lumera-footer-logo {
+    display: flex;
+    flex-direction: column;
+
+    color: #f7f1e8;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.lumera-footer-logo span {
+    margin-top: 3px;
+
+    color: #b8aa9d;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+.lumera-footer p {
+    margin: 0;
+
+    font-size: 12px;
+}
+
+.lumera-footer strong {
+    color: white;
+}
+
+.lumera-footer a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .lumera-contacto {
+        grid-template-columns: 1fr;
+
+        padding: 90px 5%;
+
+        gap: 50px;
+    }
+
+    .lumera-contacto-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .lumera-reserva-card {
+        padding: 35px;
+
+        border-radius: 25px;
+    }
+
+    .lumera-reserva-card h3 {
+        font-size: 38px;
+    }
+
+    .lumera-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+.plato-pasta {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.04),
+            rgba(20, 15, 12, 0.42)),
+        url("./lumera-pasta.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato-risotto {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.04),
+            rgba(20, 15, 12, 0.42)),
+        url("./lumera-risotto.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato-pizza {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.04),
+            rgba(20, 15, 12, 0.42)),
+        url("./lumera-pizza.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ========================================
+   LÚMERA - IMÁGENES RESTANTES
+======================================== */
+
+
+/* NUESTRA HISTORIA */
+
+.lumera-historia-imagen {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.05),
+            rgba(20, 15, 12, 0.68)),
+        url("./lumera-historia.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* AMBIENTE 01 - INTERIOR */
+
+.lumera-galeria-item:nth-child(1) {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.03),
+            rgba(20, 15, 12, 0.48)),
+        url("./lumera-ambiente-1.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* AMBIENTE 02 - MESA */
+
+.lumera-galeria-item:nth-child(2) {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.03),
+            rgba(20, 15, 12, 0.48)),
+        url("./lumera-ambiente-2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* AMBIENTE 03 - CHEF */
+
+.lumera-galeria-item:nth-child(3) {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.03),
+            rgba(20, 15, 12, 0.48)),
+        url("./lumera-ambiente-3.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-grande {
+    background-image:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.03),
+            rgba(20, 15, 12, 0.48)),
+        url("./lumera-ambiente.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CORRECCIÓN IMAGEN 01 GALERÍA LÚMERA */
+
+.lumera-galeria .galeria-grande {
+    background:
+        linear-gradient(180deg,
+            rgba(20, 15, 12, 0.03),
+            rgba(20, 15, 12, 0.48)),
+        url("./lumera-ambiente.png") center / cover no-repeat !important;
+}
+
+/* ========================================
+   PROYECTO 002 - LÚMERA
+======================================== */
+
+.pagina-lumera-proyecto {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background: #f3eee7;
+    color: #1c1815;
+}
+
+
+/* HERO DEL PROYECTO */
+
+.lumera-proyecto-hero {
+    min-height: calc(100vh - 134px);
+
+    padding: 90px 7%;
+
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+
+    gap: 80px;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(217, 119, 69, 0.10),
+            transparent 30%),
+        #f3eee7;
+}
+
+.lumera-proyecto-info {
+    max-width: 720px;
+}
+
+.lumera-proyecto-info h1 {
+    margin: 0 0 30px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(68px, 7vw, 110px);
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+}
+
+.lumera-proyecto-info h1 span {
+    display: block;
+
+    color: #c7683d;
+}
+
+.lumera-proyecto-descripcion {
+    max-width: 650px;
+
+    color: #766b63;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* DATOS */
+
+.lumera-proyecto-datos {
+    margin-top: 55px;
+
+    padding-top: 28px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #d7cec5;
+}
+
+.lumera-proyecto-datos div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lumera-proyecto-datos span {
+    color: #9c8f84;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.lumera-proyecto-datos strong {
+    font-size: 15px;
+}
+
+
+/* VISUAL */
+
+.lumera-proyecto-visual {
+    min-height: 650px;
+}
+
+.lumera-proyecto-imagen {
+    min-height: 650px;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border-radius: 38px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(18, 13, 10, 0.05),
+            rgba(18, 13, 10, 0.65)),
+        url("./lumera-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow:
+        0 35px 80px rgba(60, 40, 30, 0.22);
+}
+
+.lumera-proyecto-imagen>span {
+    margin-bottom: 15px;
+
+    color: #f1b48e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.lumera-proyecto-imagen h2 {
+    margin: 0;
+
+    max-width: 520px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 60px;
+    line-height: 0.95;
+
+    color: white;
+}
+
+
+/* RESULTADO */
+
+.lumera-resultado {
+    background: #181310;
+}
+
+.lumera-resultado .proyecto-etiqueta {
+    color: #e89568;
+}
+
+.lumera-resultado .resultado-contenido>p:not(.proyecto-etiqueta) {
+    color: #c0b3a8;
+}
+
+.lumera-resultado .resultado-btn-principal {
+    background: #f3eee7;
+    color: #181310;
+}
+
+.lumera-resultado .resultado-btn-secundario {
+    border-color: rgba(243, 238, 231, 0.35);
+    color: #f3eee7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .lumera-proyecto-hero {
+        grid-template-columns: 1fr;
+
+        padding: 70px 5%;
+
+        gap: 55px;
+    }
+
+    .lumera-proyecto-info h1 {
+        font-size: 62px;
+
+        letter-spacing: -2px;
+    }
+
+    .lumera-proyecto-datos {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .lumera-proyecto-visual,
+    .lumera-proyecto-imagen {
+        min-height: 480px;
+    }
+
+    .lumera-proyecto-imagen {
+        padding: 35px;
+
+        border-radius: 28px;
+    }
+
+    .lumera-proyecto-imagen h2 {
+        font-size: 44px;
+    }
+
+}
+
+/* ========================================
+   MR DIGITAL - PROYECTO 002 LÚMERA
+======================================== */
+
+.lumera-preview {
+    position: relative;
+
+    background:
+        linear-gradient(180deg,
+            rgba(18, 13, 10, 0.08),
+            rgba(18, 13, 10, 0.72)),
+        url("./lumera-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+}
+
+.lumera-preview span,
+.lumera-preview h3,
+.lumera-preview p {
+    position: relative;
+    z-index: 2;
+}
+
+.lumera-preview h3 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 72px);
+}
+
+.lumera-preview p {
+    color: #f0c2a5;
+}
+
+/* ========================================
+   AJUSTE TARJETA LÚMERA - MR DIGITAL
+======================================== */
+
+.proyecto-imagen.oscuro:has(.lumera-preview) {
+    padding: 0;
+    overflow: hidden;
+}
+
+.proyecto-imagen.oscuro:has(.lumera-preview) .proyecto-tag {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+}
+
+.proyecto-imagen.oscuro:has(.lumera-preview) .lumera-preview {
+    width: 100%;
+    height: 100%;
+    min-height: 470px;
+
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    box-sizing: border-box;
+    border-radius: inherit;
+
+    background:
+        linear-gradient(180deg,
+            rgba(15, 10, 7, 0.05) 25%,
+            rgba(15, 10, 7, 0.78) 100%),
+        url("./lumera-hero.png") center / cover no-repeat;
+}
+
+.proyecto-imagen.oscuro:has(.lumera-preview) .lumera-preview h3 {
+    margin: 8px 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 0.95;
+
+    color: #ffffff;
+}
+
+.proyecto-imagen.oscuro:has(.lumera-preview) .lumera-preview p {
+    margin: 0;
+    color: #f1c0a1;
+}
